@@ -19,10 +19,10 @@ You can connect to many popular services, such as Cortana, Facebook Messenger, K
 
 ### Technologies and frameworks used
 * [Microsoft Bot Framework V4](https://dev.botframework.com/)
-* [Virto Commerce Platform](https://github.co/VirtoCommerce)
+* [Virto Commerce Platform](https://github.com/VirtoCommerce)
 
 ## WebChat Live Demo
-* [WebChat Live Demo](https://github.co/VirtoCommerce/vc-bot/docs/webchat-demo.html)  
+* [WebChat Live Demo](https://github.com/VirtoCommerce/vc-bot/docs/webchat-demo.html)  
 * [Virto Commerce Admin](https://admin-demo.virtocommerce.com/)
 
 ![WebChat Live Demo](docs/media/WebChat-demo.gif)
