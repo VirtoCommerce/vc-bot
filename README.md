@@ -1,17 +1,46 @@
-# Virto Commerce Order Bot. Configuration instructions
+# Virto Commerce Order Bot Kit
 
-## Prerequisites
+## Overview
+Virto Commerce Order Bot Kit presents is Bot Client Application for Virto Commerce Platform. 
+
+In scenario, a chatbot is used for B2B e-commerce chain that allows customers to browse the catalog, add product to cart and create an order from popular channels and devices.
+
+### Key features
+* No Custom modules, can be connected to any Virto Commerce Platform
+* On-demand authentication (focus for B2B) 
+* View Recommended products 
+* Search products by keyword
+* Add a product to Shopping Cart (with quantity)
+* View Shopping Cart
+* Create an order
+
+### Supported Channels
+You can connect to many popular services, such as Cortana, Facebook Messenger, Kik, and Slack, as well as several others. The Web Chat channel is pre-configured for you. In addition to standard channels provided with the Bot Connector Service, you can also connect your bot to your own client application using Direct Line as your channel.
+
+### Technologies and frameworks used
+* [Microsoft Bot Framework V4](https://dev.botframework.com/)
+* [Virto Commerce Platform](https://github.co/VirtoCommerce)
+
+## WebChat Live Demo
+* [WebChat Live Demo](https://github.co/VirtoCommerce/vc-bot/docs/webchat-demo.html)  
+* [Virto Commerce Admin](https://admin-demo.virtocommerce.com/)
+
+![WebChat Live Demo](docs/media/WebChat-demo.gif)
+
+## Source code getting started
+
+### Prerequisites
 * Azure subscription https://azure.microsoft.com/en-us/free/
 * Access to running Virto Commerce Platform
 
-## Configuring platform and bot
+### Configuring platform and bot
 1. Create "BotUserName" dynamic property (Value Type: Short Text) to VirtoCommerce.Domain.Customer.Model.Contact type. Restart the application.
 2. Create security account for authenticating as a bot. 
    * Mark it "Is administrator".
    * Add API Account (Hmac type)
 3. Fill VirtoCommerce.OrderBot\appsettings.json
 
-## Deploy to Azure
+### Deploy to Azure
 1. Sign in to Azure portal
 2. Create Bot Channel (Create a resource -> Bot Channels Registration)
 3. Add application secrets (Registered bot channels -> Settings -> Microsoft App ID (Manage))
@@ -23,15 +52,15 @@
 
 https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0
 
-## Bot authorization
+### Bot authorization
 
 The first time when you contact the bot, it will send you your identifier. You need to save the identifier to your Contact's dynamic property (BotUserName), reindex the entity, and try to authorize with the bot.
 
-# Bot's technical details
+## Bot's technical details
 
 This bot has been created using [Bot Framework](https://dev.botframework.com), it shows the minimum code required to build a bot.
 
-## Prerequisites
+### Prerequisites
 
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.2
 
@@ -40,7 +69,7 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
   dotnet --version
   ```
 
-## To try this sample
+### To try this sample
 
 - In a terminal, navigate to `VirtoCommerce.OrderBot`
 
@@ -66,23 +95,23 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), i
   - Select `VirtoCommerce.OrderBot.csproj` file
   - Press `F5` to run the project
 
-## Testing the bot using Bot Framework Emulator
+### Testing the bot using Bot Framework Emulator
 
 [Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
 
 - Install the Bot Framework Emulator version 4.3.0 or greater from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
-### Connect to the bot using Bot Framework Emulator
+#### Connect to the bot using Bot Framework Emulator
 
 - Launch Bot Framework Emulator
 - File -> Open Bot
 - Enter a Bot URL of `http://localhost:3978/api/messages`
 
-## Deploy the bot to Azure
+### Deploy the bot to Azure
 
 To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
 
-## Further reading
+### Further reading
 
 - [Bot Framework Documentation](https://docs.botframework.com)
 - [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
