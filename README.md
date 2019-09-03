@@ -22,7 +22,7 @@ You can connect to many popular services, such as Cortana, Facebook Messenger, K
 * [Virto Commerce Platform](https://github.com/VirtoCommerce)
 
 ## WebChat Live Demo
-* [WebChat Live Demo](https://github.com/VirtoCommerce/vc-bot/docs/webchat-demo.html)  
+* [WebChat Live Demo](docs/webchat-demo.html)  
 * [Virto Commerce Admin](https://admin-demo.virtocommerce.com/)
 
 ![WebChat Live Demo](docs/media/WebChat-demo.gif)
