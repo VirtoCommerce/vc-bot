@@ -21,8 +21,8 @@ You can connect to many popular services, such as Cortana, Facebook Messenger, K
 * [Microsoft Bot Framework V4](https://dev.botframework.com/)
 * [Virto Commerce Platform](https://github.com/VirtoCommerce)
 
-## WebChat Live Demo
-* [WebChat Live Demo](docs/webchat-demo.html)  
+## WebChat Demo
+* [WebChat Demo](docs/webchat-demo.html) - Download and Open Html Page in any browser 
 * [Virto Commerce Admin](https://admin-demo.virtocommerce.com/)
 
 ![WebChat Live Demo](docs/media/WebChat-demo.gif)
